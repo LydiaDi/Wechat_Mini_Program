@@ -1,0 +1,24 @@
+
+<view class="all" style="background-image:url('../../img/background.jpg')">
+<view class="con">
+  <text class="tx" >身份证号：</text>
+  <input class="input" bindinput="haveId" placeholder="" placeholder-class="place-holder" ></input>
+  
+  <text class="tx" >密码:</text>
+  <input class="input" bindinput="havePwd" placeholder="" placeholder-class="place-holder"></input>
+
+ 
+  <button id="btnConfirm" type="primary" bindtap="confirm" form-type="submint" >确定</button>
+  <view wx:if="{{fu==1}}"><text>此账号不存在！</text></view>
+  <view wx:if="{{fu==2}}"><text>密码输入错误！</text></view>
+</view>
+</view>
+
+
+
+
+
+
+
+
+

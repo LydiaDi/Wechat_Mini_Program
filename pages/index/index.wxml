@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <block wx:if="{{canIUseOpenData}}" calss="userinfo-opendata">
+      <view class="userinfo-avatar" bindtap="bindViewTap">
+        <open-data type="userAvatarUrl"></open-data>
+      </view>
+      <open-data type="userNickName"></open-data>
+    </block>
+    <block wx:elif="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile"> 获取头像昵称 </button>
+      <button wx:elif="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <view wx:else> 请使用1.4.4及以上版本基础库 </view>
+    </block>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+    <button type="primary" bindtap="test">周公解梦api测试</button>
+    <button type="primary" bindtap="health">疫情情况api测试</button>
+    <button type="primary" bindtap="sql">点击查询</button>
+  </view>
+
+</view>
+<view wx:for="{{dreamResult}}" wx:for-index="id" wx:for-item="item">
+  <view>梦到{{dreamResult[id].title}}------{{dreamResult[id].result}}</view>
+</view>
+<view>
+<view>{{name}}</view>
+<view wx:if="{{code==200}}">确诊人数：<text>{{confirmedCount}}</text></view>
+<view wx:if="{{code==200}}">治愈人数：<text>{{curedCount}}</text></view>
+<view wx:if="{{code==200}}">新增确诊人数：<text>{{currentConfirmedCount}}</text></view>
+</view>
+
+<view>
+<view wx:if="{{ret==200}}">楼宇：<text>{{build}}</text></view>
+<view wx:if="{{ret==200}}">房间号：<text>{{room}}</text></view>
+<view wx:if="{{ret==200}}">室友：<text>{{two}}</text></view>
+<view wx:if="{{ret==200}}"><text>\t{{three}}</text></view>
+<view wx:if="{{ret==200}}"><text>&nbsp;&nbsp;&nbsp;{{three}}</text></view>
+<view wx:if="{{ret==200}}"><text>&nbsp;&nbsp;&nbsp;{{four}}</text></view>
+
+</view>

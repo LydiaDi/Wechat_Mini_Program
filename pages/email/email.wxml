@@ -1,0 +1,5 @@
+<text>\n\n收到的信息：\n\n</text>
+
+<view wx:for="{{mes}}" wx:for-index="id" wx:for-item="item">
+  <view><text>\t\t\t</text>{{mes[id].Time}}------{{mes[id].Content}}</view>
+</view>

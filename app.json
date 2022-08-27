@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/result/result",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/result2/result2",
+    "pages/person/person",
+    "pages/other/other",
+    "pages/email/email",
+    "pages/apply/apply",
+    "pages/write/write",
+    "pages/nav/nav"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "Soul Roommate",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

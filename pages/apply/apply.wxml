@@ -1,0 +1,21 @@
+
+<view class="main">
+<view  class="a">姓名：<text >{{name}}</text></view>
+<view  class="a">身份证号：<text >{{id}}</text></view>
+
+<view  class="n">调换原因：</view>
+
+<view class="m"> 
+<input class="input" bindinput="haveA" placeholder="" placeholder-class="place-holder" ></input>
+</view>
+<text>\n\n</text>
+<view class="n">具体内容：</view>
+
+<view class="m">
+<input class="input" bindinput="haveB" placeholder="" placeholder-class="place-holder"></input>
+</view>
+</view>
+
+<text>\n\n\n\n</text>
+<button id="btnConfirm" type="primary" bindtap="confirm" form-type="submint" >确定</button>
+<view wx:if="{{s==1}}"><text>提交成功！</text></view>

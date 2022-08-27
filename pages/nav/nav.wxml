@@ -1,0 +1,48 @@
+<!-- -->
+<view class="container">
+
+<!-- -->
+<view class="userinfo">
+  <navigator url="../person/person?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>个人中心</text>
+  </navigator>
+</view>
+
+
+<!-- -->
+<view class="uploader">
+  <navigator url="../write/write?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>填写信息</text>
+  </navigator>
+</view>
+
+
+<!-- -->
+<view class="uploader">
+  <navigator url="../result/result?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>查看结果</text>
+  </navigator>
+</view>
+
+<!-- -->
+<view class="uploader">
+  <navigator url="../apply/apply?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>进行申请</text>
+  </navigator>
+</view>
+
+<!-- -->
+<view class="uploader">
+  <navigator url="../other/other?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>其他通知</text>
+  </navigator>
+</view>
+
+<!-- -->
+<view class="uploader">
+  <navigator url="../email/email?uid={{a}}" open-type="navigate" class="uploader-text">
+    <text>收件箱</text>
+  </navigator>
+</view>
+
+</view>

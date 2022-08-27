@@ -1,0 +1,42 @@
+/* pages/login/login.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  
+}
+.all{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*background-color: pink;
+  background-image: url('../../img/background.jpg');*/
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.input{
+  width: 230px;
+  height: 40px;
+  border:solid 1px;
+  border-radius: 3px;
+  margin-bottom:40px;
+}
+
+.tx{
+  float: left;
+  width: 80px;
+  height:40px;
+  line-height:40px;
+  margin-left:10px;
+  text-align:center;
+  margin-bottom:40px;
+}
+.con{
+  height:200px;
+  margin-top: 120px;
+}
+#btnConfirm{
+  background-color: #60c1d4;
+  letter-spacing: 20px;
+}

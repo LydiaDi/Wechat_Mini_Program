@@ -1,0 +1,14 @@
+
+<view class="main">
+<view wx:if="{{ret==200 && fu==0 }}" class="a">楼宇号：<text >{{build}}</text></view>
+
+<view wx:if="{{ret==200 && fu==0}}" class="a">房间号：<text>{{room}}</text></view>
+<view wx:if="{{ret==200 && fu==0}}" class="b">室友：</view>
+
+<view wx:if="{{ret==200 && fu==0}}" class="c"><text>{{one}}\n</text>
+<text>{{two}}\n</text>
+<text>{{three}}\n</text>
+<text>{{four}}\n</text></view>
+<view wx:if="{{fu==1}}"><text>请耐心等待，还未进行分配！</text></view>
+<view wx:if="{{fu==3}}"><text>请耐心等待，分配结果还未发布！</text></view>
+</view>

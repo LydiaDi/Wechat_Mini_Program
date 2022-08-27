@@ -1,0 +1,17 @@
+
+<view class="main">
+<view  class="a">姓名：<text >{{name}}</text></view>
+<view class="a">性别：<text>{{sex}}</text></view>
+<view  class="a">身份证号：<text >{{id}}</text></view>
+<view class="a">邮箱：<text>{{email}}</text></view>
+
+<view  class="a">学号：<text >{{num}}</text></view>
+<view class="a">学院：<text>{{col}}</text></view>
+
+<view  class="a">班级：<text >{{cla}}</text></view>
+<view class="a">联系方式：<text>{{pho}}</text></view>
+
+
+
+
+</view>

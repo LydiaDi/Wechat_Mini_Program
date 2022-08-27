@@ -1,0 +1,29 @@
+/* pages/result/result.wxss */
+.main{
+  font-size: 20px;
+  margin-top: 100px;
+  margin-left: 10px;
+}
+.a{
+height: 50px;
+}
+.n{
+  height: 50px;
+  float: left;
+}
+.input{
+  width: 150px;
+  height: 40px;
+  border:solid 1px;
+  border-radius: 3px;
+  margin-bottom:40px;
+  float: right;
+}
+.m{
+  height: 50px;
+  float: left;
+}
+#btnConfirm{
+  background-color: #60c1d4;
+  letter-spacing: 20px;
+}

@@ -1,0 +1,4 @@
+<!--pages/write/write.wxml-->
+<text>\n\n请点击网址，前往网页端填写信息\n[共7大项  52道选择题]\n</text>
+
+<text>\n\n\nhttp://www.....[因为网址未布置到云端，此处不再显示]</text>
